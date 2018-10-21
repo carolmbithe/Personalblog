@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+
+{% block styles%}
+  {{ super() }}
+  <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+  {% endblock %}
+
+  {% block content %}
+
+<div class="container">
+  <button class="btn btn-info">  <a href="/subscribe">subscribe to get notifications</a></button>
+
+  <div class="row">
+    <div class="col-md-7">
+    <h2>Blogs Posted</h2>
+
+    {{macro.displayBlogs(blogs)}}
+
+    </div>
+
+</div>
+</div>
+{% endblock%}
