@@ -48,7 +48,10 @@
 
 <div class="row">
   <h1>Your posts</h1>
+  {% if blog %}
   {{macro.displayBlogs(blog)}}
+  {% else%}
+  <h3 class="text-center">You have no blogs yet </h3>
 
 </div>
 {% endblock %}
