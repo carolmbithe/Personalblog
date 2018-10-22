@@ -9,11 +9,14 @@ This application allows writers to create and their blogs and other users can re
 ## Project setup instructions
 You can install this app by cloning the repository from this link https://github.com/carolmbithe/Personalblog.git
 
+## Live link
+You can find the live site here
+
 ## Known Bugs
 There are no known bugs so far,everything is working.
 
 
-## Technologies Used
+## Technologies Used.
 This project was generated with: * CSS</br  >
 * Bootstrap</br  >
 * Python3.6</br  >
