@@ -81,6 +81,15 @@ def newblog():
     return render_template('blog.html',blog_form=form)
 
 
+@main.route('/delete/<int:id>', methods = ['GET', 'POST'])
+@login_required
+def delete_blog(id):
+    blog = Blog.get_blog(id)
+    db.session.delete(blog)
+    db.session.commit()
+
+    return render_template('index.html', id=id, blog = blog)
+
 @main.route('/comment',methods= ['GET','POST'])
 @login_required
 def comment():
